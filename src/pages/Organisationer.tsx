@@ -76,9 +76,9 @@ const Organisationer = () => {
         {/* Hero */}
         <section className="bg-gradient-to-br from-primary/10 to-accent/10 py-20">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-5xl font-bold mb-6">Organisationer & Evenemang</h1>
+            <h1 className="text-5xl font-bold mb-6">Föreningar & Organisationer</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Upptäck kommande miljöevenemang och initiv från aktiva organisationer
+              Upptäck aktiva föreningar och deras evenemang - allt tack vare sponsrade EcoCard-kort
             </p>
           </div>
         </section>
@@ -131,9 +131,9 @@ const Organisationer = () => {
         {/* Info Section */}
         <section className="py-16 bg-primary/5">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-4">Har din organisation ett evenemang?</h2>
+            <h2 className="text-3xl font-bold mb-4">Har din förening ett evenemang?</h2>
             <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-              Få en egen sektion på vår plattform och nå ut till fler engagerade människor
+              Få hållbara informationskort sponsrade av företag. Sprida ert budskap kostnadseffektivt och miljövänligt!
             </p>
           </div>
         </section>

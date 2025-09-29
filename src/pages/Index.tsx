@@ -25,20 +25,20 @@ const Index = () => {
       >
         <div className="container mx-auto px-4 z-10">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
-            Tillsammans för en hållbar framtid
+            Hållbara informationskort för föreningar och organisationer
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto">
-            EcoCard kopplar samman sponsorer med organisationer och aktivister genom innovativa QR-kort
+            Ersätt flygblad och broschyrer med miljövänliga kort. Tryckta på återvunnet material, sponsrade av engagerade företag.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="lg" asChild>
-              <Link to="/sponsorer">
-                Utforska Sponsorer <ArrowRight className="ml-2" />
+              <Link to="/organisationer">
+                För Föreningar & Organisationer <ArrowRight className="ml-2" />
               </Link>
             </Button>
             <Button variant="outline" size="lg" asChild className="bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white/20">
-              <Link to="/organisationer">
-                Se Organisationer
+              <Link to="/sponsorer">
+                Bli Sponsor
               </Link>
             </Button>
           </div>
@@ -48,9 +48,9 @@ const Index = () => {
       {/* How It Works */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4">Så fungerar EcoCard</h2>
+          <h2 className="text-4xl font-bold text-center mb-4">Så fungerar det</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            En enkel lösning som skapar verklig påverkan
+            En smart och hållbar lösning som gynnar alla
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -61,12 +61,12 @@ const Index = () => {
                 </div>
                 <CardTitle className="flex items-center gap-2">
                   <QrCode className="h-5 w-5 text-primary" />
-                  QR-kort
+                  Hållbara Kort
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Organisationer får unika QR-kort som länkar direkt till deras evenemang och aktiviteter på vår plattform.
+                  Få information tryckta på kort av återvunnet eller biologiskt nedbrytbart material. Ett miljövänligt alternativ till flygblad och broschyrer.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -78,12 +78,12 @@ const Index = () => {
                 </div>
                 <CardTitle className="flex items-center gap-2">
                   <Users className="h-5 w-5 text-primary" />
-                  Engagemang
+                  Subventionerade Kostnader
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Människor scannar korten och upptäcker engagerande miljöevenemang och initiativ i deras närhet.
+                  Sponsorer betalar för att få sin logotyp på korten, vilket gör det billigt eller gratis för föreningar att sprida sin information.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -95,12 +95,12 @@ const Index = () => {
                 </div>
                 <CardTitle className="flex items-center gap-2">
                   <Calendar className="h-5 w-5 text-primary" />
-                  Samverkan
+                  Dubbel Hållbarhet
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Sponsorer får synlighet och stödjer samtidigt viktiga miljöinitiativ genom vår plattform.
+                  Vi bidrar till både ekologisk hållbarhet (mindre avfall) och social hållbarhet (stärker demokrati, yttrandefrihet och delaktighet).
                 </CardDescription>
               </CardContent>
             </Card>
@@ -111,9 +111,9 @@ const Index = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">Bli en del av förändringen</h2>
+          <h2 className="text-4xl font-bold mb-6">Bli en del av rörelsen</h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Oavsett om du är en organisation, aktivist eller företag som vill göra skillnad
+            Oavsett om du driver en förening, arbetar i en organisation eller vill sponsra - tillsammans bygger vi ett grönare och mer demokratiskt samhälle
           </p>
           <Button size="lg" asChild>
             <Link to="/kontakt">

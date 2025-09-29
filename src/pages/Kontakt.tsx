@@ -41,7 +41,7 @@ const Kontakt = () => {
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-5xl font-bold mb-6">Kontakta Oss</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Vi ser fram emot att höra från dig!
+              Har du frågor om att bli sponsor eller vill din förening komma igång? Hör av dig!
             </p>
           </div>
         </section>
@@ -164,19 +164,19 @@ const Kontakt = () => {
                       <div>
                         <p className="font-semibold mb-1">Hur blir man sponsor?</p>
                         <p className="text-muted-foreground">
-                          Kontakta oss via formuläret så berättar vi mer om våra sponsorpaket.
+                          Kontakta oss via formuläret så berättar vi mer om hur ni får er logotyp på korten och stödjer föreningar.
                         </p>
                       </div>
                       <div>
-                        <p className="font-semibold mb-1">Kan min organisation delta?</p>
+                        <p className="font-semibold mb-1">Kan min förening delta?</p>
                         <p className="text-muted-foreground">
-                          Absolut! Alla miljöorganisationer är välkomna. Hör av dig så hjälper vi er komma igång.
+                          Absolut! Alla föreningar och organisationer är välkomna. Hör av dig så hjälper vi er komma igång med sponsrade kort.
                         </p>
                       </div>
                       <div>
-                        <p className="font-semibold mb-1">Hur får man QR-kort?</p>
+                        <p className="font-semibold mb-1">Vad kostar korten?</p>
                         <p className="text-muted-foreground">
-                          När ni registrerar er organisation får ni tillgång till era unika QR-kort digitalt och kan beställa fysiska kort.
+                          Tack vare våra sponsorer kan vi hålla priserna mycket låga eller till och med gratis för föreningar. Hör av er för en offert!
                         </p>
                       </div>
                     </div>

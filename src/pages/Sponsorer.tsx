@@ -9,44 +9,50 @@ const Sponsorer = () => {
     {
       id: 1,
       name: "GreenTech Solutions",
-      description: "Ledande inom hållbar teknologi och förnybar energi. Vi investerar i framtidens gröna lösningar.",
+      description: "Ledande inom hållbar teknologi och förnybar energi. Vi stödjer civilsamhället genom EcoCard.",
       website: "https://greentech.se",
       logo: "🌱",
+      contribution: "Sponsrar 500 informationskort per månad",
     },
     {
       id: 2,
       name: "EkoBank",
-      description: "Sveriges första helt klimatneutrala bank. Vi finansierar bara hållbara projekt.",
+      description: "Sveriges första helt klimatneutrala bank. Vi tror på ett starkare civilsamhälle.",
       website: "https://ekobank.se",
       logo: "🏦",
+      contribution: "Sponsrar 1000 informationskort per månad",
     },
     {
       id: 3,
       name: "NatureFirst Transport",
-      description: "Eldrivna transporter och logistiklösningar för en renare framtid.",
+      description: "Eldrivna transporter och logistiklösningar. Vi stödjer demokrati och hållbarhet.",
       website: "https://naturefirst.se",
       logo: "🚛",
+      contribution: "Sponsrar 300 informationskort per månad",
     },
     {
       id: 4,
       name: "Circular Fashion",
-      description: "Mode utan kompromisser. 100% återvunna och återvinningsbara material.",
+      description: "Mode utan kompromisser. Vi vill stärka både miljö och demokrati.",
       website: "https://circularfashion.se",
       logo: "👔",
+      contribution: "Sponsrar 400 informationskort per månad",
     },
     {
       id: 5,
       name: "Solar Power AB",
-      description: "Solenergilösningar för hem och företag. Installationer över hela Sverige.",
+      description: "Solenergilösningar för hem och företag. Vi tror på lokal organisering.",
       website: "https://solarpower.se",
       logo: "☀️",
+      contribution: "Sponsrar 600 informationskort per månad",
     },
     {
       id: 6,
       name: "BioDynamics",
-      description: "Ekologisk matproduktion i stor skala. Från jord till bord med omtanke.",
+      description: "Ekologisk matproduktion i stor skala. Från jord till bord med omtanke och respekt.",
       website: "https://biodynamics.se",
       logo: "🌾",
+      contribution: "Sponsrar 700 informationskort per månad",
     },
   ];
 
@@ -60,7 +66,7 @@ const Sponsorer = () => {
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-5xl font-bold mb-6">Våra Sponsorer</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Företag som delar vår vision om en hållbar framtid och stödjer miljöinitiativ
+              Företag som stödjer föreningar genom att finansiera hållbara informationskort
             </p>
           </div>
         </section>
@@ -77,7 +83,8 @@ const Sponsorer = () => {
                   <CardHeader>
                     <div className="text-6xl mb-4">{sponsor.logo}</div>
                     <CardTitle>{sponsor.name}</CardTitle>
-                    <CardDescription>{sponsor.description}</CardDescription>
+                    <CardDescription className="mb-2">{sponsor.description}</CardDescription>
+                    <p className="text-sm text-primary font-medium">{sponsor.contribution}</p>
                   </CardHeader>
                   <CardContent>
                     <Button variant="outline" className="w-full" asChild>
@@ -97,7 +104,7 @@ const Sponsorer = () => {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-4">Vill ditt företag bli sponsor?</h2>
             <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-              Kontakta oss för att diskutera hur ni kan stödja miljöinitiativ och få synlighet
+              Få er logotyp på EcoCard-korten, stöd föreningar och organisationer, och visa ert engagemang för hållbarhet och demokrati
             </p>
             <Button asChild>
               <a href="/kontakt">Kontakta oss</a>

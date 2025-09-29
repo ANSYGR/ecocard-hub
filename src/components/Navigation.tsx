@@ -9,8 +9,8 @@ const Navigation = () => {
 
   const navItems = [
     { name: "Hem", path: "/" },
-    { name: "Sponsorer", path: "/sponsorer" },
-    { name: "Organisationer", path: "/organisationer" },
+    { name: "Bli Sponsor", path: "/sponsorer" },
+    { name: "För Föreningar", path: "/organisationer" },
     { name: "Kalender", path: "/kalender" },
     { name: "Om Oss", path: "/om-oss" },
     { name: "Kontakt", path: "/kontakt" },
@@ -23,7 +23,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="text-2xl font-bold text-primary">
-            EcoCard
+            EcoCard UF
           </Link>
 
           {/* Desktop Navigation */}
