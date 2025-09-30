@@ -3,62 +3,74 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar as CalendarIcon, MapPin, Users } from "lucide-react";
+import eventPalestine from "@/assets/event-palestine.jpg";
+import eventPride from "@/assets/event-pride.jpg";
+import eventClimate from "@/assets/event-climate.jpg";
+import eventRights from "@/assets/event-rights.jpg";
+import eventStrike from "@/assets/event-strike.jpg";
+import eventCampaign from "@/assets/event-campaign.jpg";
 
 const Kalender = () => {
   const events = [
     {
       id: 1,
       date: "15 Apr",
-      eventName: "Storstädning av Mälaren",
-      organization: "Klimataktivister Sverige",
-      location: "Mälaren, Stockholm",
-      participants: 120,
-      category: "Städning",
+      eventName: "Manifestation för fred och rättvisa",
+      organization: "Palestina Solidaritet Sverige",
+      location: "Sergels torg, Stockholm",
+      participants: 800,
+      category: "Demonstration",
+      image: eventPalestine,
     },
     {
       id: 2,
       date: "22 Apr",
-      eventName: "Klimatmanifestation Riksdagen",
-      organization: "GreenPeace Stockholm",
-      location: "Riksdagen, Stockholm",
-      participants: 500,
-      category: "Demonstration",
+      eventName: "Pride Parade 2025",
+      organization: "Stockholm Pride",
+      location: "Stockholms innerstad",
+      participants: 5000,
+      category: "Pride",
+      image: eventPride,
     },
     {
       id: 3,
       date: "1 Maj",
-      eventName: "Trädplantering Hagaparken",
-      organization: "Naturskyddsföreningen",
-      location: "Hagaparken, Stockholm",
-      participants: 80,
-      category: "Plantering",
+      eventName: "Klimaträttvisa manifestation",
+      organization: "Klimatrörelsen Nu",
+      location: "Mynttorget, Stockholm",
+      participants: 1200,
+      category: "Klimat",
+      image: eventClimate,
     },
     {
       id: 4,
       date: "8 Maj",
-      eventName: "Strandstädning Östersjön",
-      organization: "Ocean Warriors",
-      location: "Sandhamn, Stockholm",
-      participants: 60,
-      category: "Städning",
+      eventName: "Demonstration för asylrätt",
+      organization: "Rättighetscentrum",
+      location: "Medborgarplatsen, Stockholm",
+      participants: 600,
+      category: "Juridik",
+      image: eventRights,
     },
     {
       id: 5,
       date: "15 Maj",
-      eventName: "Klimatstrejk Sergels torg",
-      organization: "Fridays for Future",
+      eventName: "Klimatstrejk",
+      organization: "Fridays for Future Stockholm",
       location: "Sergels torg, Stockholm",
-      participants: 1000,
+      participants: 2000,
       category: "Strejk",
+      image: eventStrike,
     },
     {
       id: 6,
       date: "20 Maj",
-      eventName: "Bygga Odlingslådor",
-      organization: "Urban Gardening Collective",
-      location: "Rålambshovsparken, Stockholm",
-      participants: 40,
-      category: "Workshop",
+      eventName: "Valkampanj - Rösta för förändring",
+      organization: "Demokrati i Rörelse",
+      location: "Hötorget, Stockholm",
+      participants: 400,
+      category: "Val",
+      image: eventCampaign,
     },
   ];
 
@@ -89,16 +101,23 @@ const Kalender = () => {
               {events.map((event) => (
                 <Card 
                   key={event.id}
-                  className="shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-[var(--transition-smooth)]"
+                  className="shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-[var(--transition-smooth)] overflow-hidden"
                 >
-                  <CardHeader>
-                    <div className="flex flex-col md:flex-row md:items-center gap-4">
-                      <div className="flex-shrink-0 w-20 h-20 bg-primary/10 rounded-lg flex flex-col items-center justify-center">
-                        <div className="text-2xl font-bold text-primary">{event.date.split(' ')[0]}</div>
-                        <div className="text-sm text-muted-foreground">{event.date.split(' ')[1]}</div>
+                  <CardHeader className="p-0">
+                    <div className="flex flex-col md:flex-row md:items-center gap-0">
+                      <div className="flex-shrink-0 w-full md:w-48 h-48 md:h-32 relative">
+                        <img 
+                          src={event.image} 
+                          alt={event.eventName} 
+                          className="w-full h-full object-cover"
+                        />
+                        <div className="absolute top-3 left-3 bg-card/95 backdrop-blur-sm rounded-lg p-2 flex flex-col items-center justify-center min-w-[60px]">
+                          <div className="text-2xl font-bold text-primary">{event.date.split(' ')[0]}</div>
+                          <div className="text-xs text-muted-foreground">{event.date.split(' ')[1]}</div>
+                        </div>
                       </div>
                       
-                      <div className="flex-1">
+                      <div className="flex-1 p-6">
                         <div className="flex items-start justify-between mb-2">
                           <CardTitle className="text-xl">{event.eventName}</CardTitle>
                           <Badge variant="secondary">{event.category}</Badge>

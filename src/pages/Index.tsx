@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ArrowRight, QrCode, Users, Calendar } from "lucide-react";
-import heroImage from "@/assets/hero-image.jpg";
+import heroImage from "@/assets/hero-protest.jpg";
 import qrIcon from "@/assets/qr-icon.jpg";
 import communityIcon from "@/assets/community-icon.jpg";
 import calendarIcon from "@/assets/calendar-icon.jpg";

@@ -3,68 +3,80 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, MapPin, Users } from "lucide-react";
+import eventPalestine from "@/assets/event-palestine.jpg";
+import eventPride from "@/assets/event-pride.jpg";
+import eventClimate from "@/assets/event-climate.jpg";
+import eventRights from "@/assets/event-rights.jpg";
+import eventStrike from "@/assets/event-strike.jpg";
+import eventCampaign from "@/assets/event-campaign.jpg";
 
 const Organisationer = () => {
   const events = [
     {
       id: 1,
-      organization: "Klimataktivister Sverige",
-      eventName: "Storstädning av Mälaren",
+      organization: "Palestina Solidaritet Sverige",
+      eventName: "Manifestation för fred och rättvisa",
       date: "15 April 2025",
-      location: "Mälaren, Stockholm",
-      participants: 120,
-      description: "Tillsammans städar vi Mälarens stränder och samlar in plast och skräp. Ta med egna handskar och påsar!",
-      tags: ["Städning", "Vatten", "Community"],
+      location: "Sergels torg, Stockholm",
+      participants: 800,
+      description: "Fredlig demonstration för mänskliga rättigheter och internationell rätt. Tillsammans höjer vi våra röster för fred och rättvisa.",
+      tags: ["Demonstration", "Mänskliga Rättigheter", "Fred"],
+      image: eventPalestine,
     },
     {
       id: 2,
-      organization: "GreenPeace Stockholm",
-      eventName: "Klimatmanifestation Riksdagen",
+      organization: "Stockholm Pride",
+      eventName: "Pride Parade 2025",
       date: "22 April 2025",
-      location: "Riksdagen, Stockholm",
-      participants: 500,
-      description: "Fredlig demonstration för snabbare klimatomställning och ambitiösare klimatmål.",
-      tags: ["Demonstration", "Politik", "Klimat"],
+      location: "Stockholms innerstad",
+      participants: 5000,
+      description: "Fira kärlek, mångfald och lika rättigheter! En färgstark parad genom Stockholm för alla HBTQI+ personer och allierade.",
+      tags: ["Pride", "HBTQI+", "Rättigheter"],
+      image: eventPride,
     },
     {
       id: 3,
-      organization: "Naturskyddsföreningen",
-      eventName: "Trädplantering Hagaparken",
+      organization: "Klimatrörelsen Nu",
+      eventName: "Klimaträttvisa manifestation",
       date: "1 Maj 2025",
-      location: "Hagaparken, Stockholm",
-      participants: 80,
-      description: "Plantera träd och återställ grönområden. Alla är välkomna, familjevänligt!",
-      tags: ["Plantering", "Skog", "Familj"],
+      location: "Mynttorget, Stockholm",
+      participants: 1200,
+      description: "Kräv klimaträttvisa nu! Vi samlas för att kräva omedelbar klimatomställning och rättvisa klimatpolitik.",
+      tags: ["Klimat", "Aktivism", "Politik"],
+      image: eventClimate,
     },
     {
       id: 4,
-      organization: "Ocean Warriors",
-      eventName: "Strandstädning Östersjön",
+      organization: "Rättighetscentrum",
+      eventName: "Demonstration för asylrätt",
       date: "8 Maj 2025",
-      location: "Sandhamn, Stockholm",
-      participants: 60,
-      description: "Skydda vår Östersjö genom att samla skräp från stränder och dokumentera plastnedskräpning.",
-      tags: ["Städning", "Ocean", "Dokumentation"],
+      location: "Medborgarplatsen, Stockholm",
+      participants: 600,
+      description: "Stå upp för asylrätten och mänskliga rättigheter. Alla människor har rätt till ett säkert liv och rättvis behandling.",
+      tags: ["Asylrätt", "Juridik", "Solidaritet"],
+      image: eventRights,
     },
     {
       id: 5,
-      organization: "Fridays for Future",
-      eventName: "Klimatstrejk Sergels torg",
+      organization: "Fridays for Future Stockholm",
+      eventName: "Klimatstrejk",
       date: "15 Maj 2025",
       location: "Sergels torg, Stockholm",
-      participants: 1000,
-      description: "Veckovis klimatstrejk för att uppmärksamma klimatkrisen. Tal, musik och gemenskap.",
+      participants: 2000,
+      description: "Veckovis klimatstrejk för att uppmärksamma klimatkrisen. Unga röster för planetens framtid - tal, musik och engagemang.",
       tags: ["Strejk", "Ungdom", "Klimat"],
+      image: eventStrike,
     },
     {
       id: 6,
-      organization: "Urban Gardening Collective",
-      eventName: "Bygga Odlingslådor",
+      organization: "Demokrati i Rörelse",
+      eventName: "Valkampanj - Rösta för förändring",
       date: "20 Maj 2025",
-      location: "Rålambshovsparken, Stockholm",
-      participants: 40,
-      description: "Workshop för att bygga och installera odlingslådor i staden. Material tillhandahålls.",
-      tags: ["Workshop", "Mat", "Urban"],
+      location: "Hötorget, Stockholm",
+      participants: 400,
+      description: "Engagera dig i demokratin! Informationskampanj om vikten av att rösta och vara en aktiv medborgare.",
+      tags: ["Val", "Demokrati", "Engagemang"],
+      image: eventCampaign,
     },
   ];
 
@@ -90,8 +102,15 @@ const Organisationer = () => {
               {events.map((event) => (
                 <Card 
                   key={event.id} 
-                  className="shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-[var(--transition-smooth)]"
+                  className="shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-[var(--transition-smooth)] overflow-hidden"
                 >
+                  <div className="aspect-video w-full overflow-hidden">
+                    <img 
+                      src={event.image} 
+                      alt={event.eventName} 
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
                   <CardHeader>
                     <div className="flex items-start justify-between mb-2">
                       <Badge variant="secondary">{event.organization}</Badge>
