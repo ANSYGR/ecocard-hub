@@ -25,10 +25,10 @@ const Index = () => {
       >
         <div className="container mx-auto px-4 z-10">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
-            Hållbara informationskort för föreningar och organisationer
+            Hållbar information för ett starkare civilsamhälle
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto">
-            Ersätt flygblad och broschyrer med miljövänliga kort. Tryckta på återvunnet material, sponsrade av engagerade företag.
+            Ersätt flygblad med miljövänliga kort tryckta på återvunnet papper. Sponsrade av företag som bryr sig – tillgängliga för alla föreningar.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="lg" asChild>
@@ -48,9 +48,9 @@ const Index = () => {
       {/* How It Works */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4">Så fungerar det</h2>
+          <h2 className="text-4xl font-bold text-center mb-4">Dubbel Hållbarhet</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            En smart och hållbar lösning som gynnar alla
+            Vi kombinerar ekologisk ansvar med social samhörighet
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -61,12 +61,12 @@ const Index = () => {
                 </div>
                 <CardTitle className="flex items-center gap-2">
                   <QrCode className="h-5 w-5 text-primary" />
-                  Hållbara Kort
+                  Ekologiskt Hållbart
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Få information tryckta på kort av återvunnet eller biologiskt nedbrytbart material. Ett miljövänligt alternativ till flygblad och broschyrer.
+                  Kort tryckta på återvunnet eller biologiskt nedbrytbart papper. Minskar avfall, resursförbrukning och klimatpåverkan jämfört med traditionella flygblad.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -78,12 +78,12 @@ const Index = () => {
                 </div>
                 <CardTitle className="flex items-center gap-2">
                   <Users className="h-5 w-5 text-primary" />
-                  Subventionerade Kostnader
+                  Tillgängligt för Alla
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Sponsorer betalar för att få sin logotyp på korten, vilket gör det billigt eller gratis för föreningar att sprida sin information.
+                  Sponsorer finansierar korten genom sin logotyp, vilket gör produkten tillgänglig även för föreningar med begränsade resurser. Dubbel nytta för alla parter.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -95,12 +95,12 @@ const Index = () => {
                 </div>
                 <CardTitle className="flex items-center gap-2">
                   <Calendar className="h-5 w-5 text-primary" />
-                  Dubbel Hållbarhet
+                  Social Samhörighet
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Vi bidrar till både ekologisk hållbarhet (mindre avfall) och social hållbarhet (stärker demokrati, yttrandefrihet och delaktighet).
+                  Främjar yttrandefrihet, synlighet och delaktighet. Ett verktyg för engagemang som stärker civilsamhället och gör det enklare för fler att delta.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -111,9 +111,9 @@ const Index = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">Bli en del av rörelsen</h2>
+          <h2 className="text-4xl font-bold mb-6">Bygg en rörelse med oss</h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Oavsett om du driver en förening, arbetar i en organisation eller vill sponsra - tillsammans bygger vi ett grönare och mer demokratiskt samhälle
+            För föreningar som vill nå ut, eller företag som vill göra skillnad - tillsammans skapar vi ett grönare och mer inkluderande samhälle
           </p>
           <Button size="lg" asChild>
             <Link to="/kontakt">

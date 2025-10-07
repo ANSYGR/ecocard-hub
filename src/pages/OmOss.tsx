@@ -7,13 +7,13 @@ const OmOss = () => {
   const values = [
     {
       icon: Target,
-      title: "Dubbel Hållbarhet",
-      description: "Vi kombinerar ekologisk hållbarhet (minskad resursförbrukning) med social hållbarhet (stärkt demokrati och delaktighet).",
+      title: "Ekologisk Hållbarhet",
+      description: "Kort tryckta på återvunnet papper minskar avfall, resursförbrukning och klimatpåverkan. Ett konkret alternativ till flygblad.",
     },
     {
       icon: Users,
-      title: "Målgrupper",
-      description: "Vi riktar oss till föreningar, ideella organisationer, studentföreningar, fackförbund och evenemangsarrangörer - samt företag som vill sponsra.",
+      title: "Social Samhörighet",
+      description: "Vi främjar synlighet, yttrandefrihet och delaktighet. Ett verktyg för engagemang som stärker civilsamhället och inkludering.",
     },
     {
       icon: Lightbulb,
@@ -22,8 +22,8 @@ const OmOss = () => {
     },
     {
       icon: Heart,
-      title: "Hållbart Material",
-      description: "Alla kort trycks på återvunnet eller biologiskt nedbrytbart material - ett konkret alternativ till flygblad och broschyrer.",
+      title: "Vår Målgrupp",
+      description: "Föreningar, ideella organisationer, studentföreningar, fackförbund och arrangörer av kultur- och klimatevenemang som vill nå ut hållbart.",
     },
   ];
 
@@ -37,7 +37,7 @@ const OmOss = () => {
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-5xl font-bold mb-6">Om EcoCard UF</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Vi bygger broer mellan företag och civilsamhälle - för både miljön och demokratin
+              Vi förenar miljöhänsyn med samhällsnytta - för ett grönare och mer inkluderande samhälle
             </p>
           </div>
         </section>
@@ -49,19 +49,24 @@ const OmOss = () => {
               <h2 className="text-3xl font-bold mb-6">Vår Affärsidé</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  EcoCard UF erbjuder ett hållbart och kostnadseffektivt sätt för föreningar, organisationer och 
-                  evenemangsarrangörer att sprida information. Genom att ersätta traditionella flygblad och broschyrer 
-                  med kort tryckta på återvunnet eller biologiskt nedbrytbart material bidrar vi till ekologisk hållbarhet.
+                  EcoCard UF erbjuder ett ekologiskt hållbart och kostnadseffektivt sätt för föreningar, organisationer 
+                  och evenemangsarrangörer att sprida information. Vårt mål är att bidra till social hållbarhet och 
+                  samhörighet i samhället genom att främja synlighet för olika röster och initiativ.
                 </p>
                 <p>
-                  Samtidigt stärker vi social hållbarhet genom att främja yttrandefrihet, delaktighet och synlighet för 
-                  civilsamhället. Med stöd från sponsorer som får sin logotyp på korten kan vi hålla kostnaderna låga för 
-                  föreningar och organisationer.
+                  Detta gör vi på ett ekologiskt hållbart sätt genom att producera våra broschyrer av återvunnet papper, 
+                  vilket minskar klimatpåverkan. Genom att ersätta traditionella flygblad minskar vi avfall och 
+                  resursförbrukning samtidigt som vi skapar en plattform för delaktighet och engagemang.
                 </p>
                 <p>
-                  Vår långsiktiga vision är att bygga en rörelse som stärker demokratin och bidrar till ett grönare och 
-                  mer inkluderande samhälle. Vi visar att små, smarta innovationer kan skapa stora förändringar - både 
-                  för miljön och för demokratin.
+                  En viktig del av vår modell är våra sponsorpartnerskap. Företag som vill profilera sig inom hållbarhet 
+                  kan stötta EcoCard och få sin logotyp tryckt på korten. På så vis subventioneras kostnaden för föreningar, 
+                  vilket gör produkten tillgänglig även för organisationer med begränsade resurser.
+                </p>
+                <p>
+                  Vår långsiktiga vision är att bygga en rörelse som bidrar till ett grönare, mer inkluderande samhälle. 
+                  Genom att förena ekologisk och social hållbarhet visar vi att små, smarta innovationer kan skapa stora 
+                  förändringar – för både miljön och samhället.
                 </p>
               </div>
             </div>
@@ -103,11 +108,11 @@ const OmOss = () => {
               <h2 className="text-3xl font-bold mb-6">Teamet bakom EcoCard UF</h2>
               <p className="text-muted-foreground mb-8">
                 Vi är ett ungt, engagerat UF-företag som tror på att förena affärsmässighet med samhällsnytta. 
-                Genom kreativitet och engagemang bygger vi en plattform som gör skillnad.
+                Genom kreativitet och engagemang bygger vi en plattform som gör skillnad för både miljön och samhället.
               </p>
               <p className="text-muted-foreground">
-                Med hjälp av sponsorer och föreningar vill vi skapa en rörelse för ett starkare civilsamhälle och 
-                en hållbar framtid - både ekologiskt och demokratiskt.
+                Med hjälp av sponsorer och föreningar vill vi skapa en rörelse för ett grönare, mer inkluderande samhälle 
+                där alla får möjlighet att göra sin röst hörd.
               </p>
             </div>
           </div>

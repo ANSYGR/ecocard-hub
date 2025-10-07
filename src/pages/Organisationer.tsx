@@ -88,16 +88,47 @@ const Organisationer = () => {
         {/* Hero */}
         <section className="bg-gradient-to-br from-primary/10 to-accent/10 py-20">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-5xl font-bold mb-6">Föreningar & Organisationer</h1>
+            <h1 className="text-5xl font-bold mb-6">För Föreningar & Organisationer</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Upptäck aktiva föreningar och deras evenemang - allt tack vare sponsrade EcoCard-kort
+              Nå ut med ert budskap på ett hållbart och kostnadseffektivt sätt – tillgängligt för alla genom sponsorstöd
             </p>
           </div>
         </section>
 
-        {/* Events Grid */}
-        <section className="py-20 bg-background">
+        {/* Benefits Section */}
+        <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-12">Varför välja EcoCard?</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
+              <Card className="shadow-[var(--shadow-soft)]">
+                <CardHeader>
+                  <CardTitle className="text-lg">Kostnadseffektivt</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">Tack vare våra sponsorer håller vi priserna låga eller gratis, så även föreningar med begränsade resurser kan delta.</p>
+                </CardContent>
+              </Card>
+              
+              <Card className="shadow-[var(--shadow-soft)]">
+                <CardHeader>
+                  <CardTitle className="text-lg">Miljövänligt</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">Kort tryckta på återvunnet papper istället för engångsflyblad. Mindre avfall och klimatpåverkan.</p>
+                </CardContent>
+              </Card>
+              
+              <Card className="shadow-[var(--shadow-soft)]">
+                <CardHeader>
+                  <CardTitle className="text-lg">Professionellt</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">Högkvalitativa kort med QR-koder och tydlig design som gör det enkelt för människor att ta del av er information.</p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <h3 className="text-2xl font-bold text-center mb-8">Aktuella Evenemang & Kampanjer</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {events.map((event) => (
                 <Card 
@@ -147,13 +178,16 @@ const Organisationer = () => {
           </div>
         </section>
 
-        {/* Info Section */}
+        {/* CTA Section */}
         <section className="py-16 bg-primary/5">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-4">Har din förening ett evenemang?</h2>
+            <h2 className="text-3xl font-bold mb-4">Redo att nå ut?</h2>
             <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-              Få hållbara informationskort sponsrade av företag. Sprida ert budskap kostnadseffektivt och miljövänligt!
+              Oavsett om ni planerar ett evenemang, demonstration eller kampanj - vi hjälper er att sprida ert budskap hållbart och kostnadseffektivt
             </p>
+            <a href="/kontakt" className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-8 py-3 text-sm font-medium shadow hover:bg-primary/90 transition-colors">
+              Kontakta oss
+            </a>
           </div>
         </section>
       </main>

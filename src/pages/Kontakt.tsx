@@ -41,7 +41,7 @@ const Kontakt = () => {
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-5xl font-bold mb-6">Kontakta Oss</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Har du frågor om att bli sponsor eller vill din förening komma igång? Hör av dig!
+              Vill din förening nå ut, eller är ditt företag intresserat av sponsring? Vi hjälper er komma igång!
             </p>
           </div>
         </section>
@@ -164,19 +164,19 @@ const Kontakt = () => {
                       <div>
                         <p className="font-semibold mb-1">Hur blir man sponsor?</p>
                         <p className="text-muted-foreground">
-                          Kontakta oss via formuläret så berättar vi mer om hur ni får er logotyp på korten och stödjer föreningar.
+                          Kontakta oss för att diskutera sponsorpaket. Er logotyp syns på korten och ni associeras med hållbarhet och samhällsengagemang.
                         </p>
                       </div>
                       <div>
-                        <p className="font-semibold mb-1">Kan min förening delta?</p>
+                        <p className="font-semibold mb-1">Vad kostar det för föreningar?</p>
                         <p className="text-muted-foreground">
-                          Absolut! Alla föreningar och organisationer är välkomna. Hör av dig så hjälper vi er komma igång med sponsrade kort.
+                          Tack vare sponsorstöd kan vi erbjuda mycket låga priser eller gratis kort. Vi vill göra det tillgängligt för alla!
                         </p>
                       </div>
                       <div>
-                        <p className="font-semibold mb-1">Vad kostar korten?</p>
+                        <p className="font-semibold mb-1">Vilka föreningar kan delta?</p>
                         <p className="text-muted-foreground">
-                          Tack vare våra sponsorer kan vi hålla priserna mycket låga eller till och med gratis för föreningar. Hör av er för en offert!
+                          Alla föreningar, ideella organisationer och evenemangsarrangörer är välkomna – från studentföreningar till fackförbund.
                         </p>
                       </div>
                     </div>

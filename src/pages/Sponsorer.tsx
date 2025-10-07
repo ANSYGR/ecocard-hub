@@ -64,16 +64,47 @@ const Sponsorer = () => {
         {/* Hero */}
         <section className="bg-gradient-to-br from-primary/10 to-accent/10 py-20">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-5xl font-bold mb-6">Våra Sponsorer</h1>
+            <h1 className="text-5xl font-bold mb-6">Bli Sponsor</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Företag som stödjer föreningar genom att finansiera hållbara informationskort
+              Stöd civilsamhället och visa ert engagemang för hållbarhet
             </p>
           </div>
         </section>
 
-        {/* Sponsors Grid */}
-        <section className="py-20 bg-background">
+        {/* Benefits Section */}
+        <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-12">Fördelar med att bli sponsor</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
+              <Card className="shadow-[var(--shadow-soft)]">
+                <CardHeader>
+                  <CardTitle className="text-lg">Synlighet & Profil</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">Er logotyp syns på tusentals kort som delas ut på evenemang och manifestationer över hela landet.</p>
+                </CardContent>
+              </Card>
+              
+              <Card className="shadow-[var(--shadow-soft)]">
+                <CardHeader>
+                  <CardTitle className="text-lg">Hållbarhetsprofil</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">Associera ert varumärke med ekologisk och social hållbarhet. Visa att ni tar samhällsansvar på riktigt.</p>
+                </CardContent>
+              </Card>
+              
+              <Card className="shadow-[var(--shadow-soft)]">
+                <CardHeader>
+                  <CardTitle className="text-lg">Stärk Civilsamhället</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">Ge föreningar med begränsade resurser möjlighet att nå ut. Bidra till yttrandefrihet och delaktighet.</p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <h3 className="text-2xl font-bold text-center mb-8">Våra Nuvarande Sponsorer</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {sponsors.map((sponsor) => (
                 <Card 
@@ -102,9 +133,9 @@ const Sponsorer = () => {
         {/* CTA */}
         <section className="py-16 bg-primary/5">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-4">Vill ditt företag bli sponsor?</h2>
+            <h2 className="text-3xl font-bold mb-4">Redo att göra skillnad?</h2>
             <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-              Få er logotyp på EcoCard-korten, stöd föreningar och organisationer, och visa ert engagemang för hållbarhet och demokrati
+              Kontakta oss för att diskutera sponsorpaket och hur ni kan profilera er som ansvarstagande aktör
             </p>
             <Button asChild>
               <a href="/kontakt">Kontakta oss</a>
