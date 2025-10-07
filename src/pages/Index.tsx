@@ -46,8 +46,12 @@ const Index = () => {
       </section>
 
       {/* Storytelling Section */}
-      <section className="py-16 bg-gradient-to-b from-background to-primary/5">
-        <div className="container mx-auto px-4 text-center">
+      <section className="py-16 bg-gradient-to-b from-background to-primary/5 relative overflow-hidden">
+        {/* Decorative shapes */}
+        <div className="absolute top-10 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rotate-45 blur-3xl -translate-x-1/2 translate-y-1/2"></div>
+        
+        <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-in">
             När en förening vill nå ut – och ett företag vill bidra
           </h2>
@@ -58,8 +62,13 @@ const Index = () => {
       </section>
 
       {/* How It Works */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-background relative overflow-hidden">
+        {/* Decorative shapes */}
+        <div className="absolute top-20 left-10 w-64 h-64 bg-primary/5 rotate-12 blur-2xl"></div>
+        <div className="absolute bottom-40 right-0 w-80 h-80 bg-accent/5 -rotate-12 blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/4 w-40 h-40 bg-primary/10 rounded-full blur-xl"></div>
+        
+        <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-4">Så funkar det</h2>
           <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
             Från idé till handling – en enkel process för hållbar information
@@ -165,8 +174,13 @@ const Index = () => {
       </section>
 
       {/* Impact Stats Section */}
-      <section className="py-20 bg-primary/5">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-primary/5 relative overflow-hidden">
+        {/* Decorative shapes */}
+        <div className="absolute -top-20 left-1/4 w-96 h-96 bg-accent/10 rotate-45 blur-3xl"></div>
+        <div className="absolute bottom-10 right-10 w-72 h-72 bg-primary/10 rounded-full blur-2xl"></div>
+        <div className="absolute top-1/3 right-1/3 w-48 h-48 bg-accent/5 -rotate-12 blur-xl"></div>
+        
+        <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-4">Vår Påverkan Hittills</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
             Tillsammans skapar vi verklig förändring – mätbar och märkbar
@@ -201,8 +215,13 @@ const Index = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-background relative overflow-hidden">
+        {/* Decorative shapes */}
+        <div className="absolute top-0 right-1/4 w-80 h-80 bg-primary/5 rotate-12 blur-3xl"></div>
+        <div className="absolute bottom-20 left-10 w-64 h-64 bg-accent/10 -rotate-6 blur-2xl"></div>
+        <div className="absolute top-1/2 right-0 w-56 h-56 bg-primary/5 rounded-full blur-xl translate-x-1/3"></div>
+        
+        <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-4">Röster från verkligheten</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
             Hör vad våra föreningar och sponsorer säger
@@ -257,8 +276,13 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/10 to-accent/10">
-        <div className="container mx-auto px-4 text-center">
+      <section className="py-20 bg-gradient-to-br from-primary/10 to-accent/10 relative overflow-hidden">
+        {/* Decorative shapes */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-primary/10 rotate-45 blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+        <div className="absolute bottom-0 right-0 w-80 h-80 bg-accent/15 rounded-full blur-2xl translate-x-1/3 translate-y-1/3"></div>
+        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-primary/5 -rotate-12 blur-xl"></div>
+        
+        <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-4xl font-bold mb-6">Bygg en rörelse med oss</h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             För föreningar som vill nå ut, eller företag som vill göra skillnad - tillsammans skapar vi ett grönare och mer inkluderande samhälle
