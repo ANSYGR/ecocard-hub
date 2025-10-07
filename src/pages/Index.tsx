@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { ArrowRight, QrCode, Users, Calendar } from "lucide-react";
+import { ArrowRight, Leaf, HandHeart, Network } from "lucide-react";
 import heroCommunity from "@/assets/hero-community.jpg";
 import qrIcon from "@/assets/qr-icon.jpg";
 import communityIcon from "@/assets/community-icon.jpg";
@@ -102,57 +102,64 @@ const Index = () => {
             Vi kombinerar ekologisk ansvar med social samhörighet
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-[var(--transition-smooth)]">
-              <CardHeader>
-                <div className="w-20 h-20 mb-4 rounded-lg overflow-hidden">
-                  <img src={qrIcon} alt="QR Kod" className="w-full h-full object-cover" />
-                </div>
-                <CardTitle className="flex items-center gap-2">
-                  <QrCode className="h-5 w-5 text-primary" />
-                  Ekologiskt Hållbart
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>
-                  Kort tryckta på återvunnet eller biologiskt nedbrytbart papper. Minskar avfall, resursförbrukning och klimatpåverkan jämfört med traditionella flygblad.
-                </CardDescription>
-              </CardContent>
-            </Card>
+          <div className="relative">
+            {/* Decorative geometric shapes */}
+            <div className="absolute -top-20 -left-20 w-40 h-40 bg-primary/5 rounded-full blur-3xl"></div>
+            <div className="absolute top-40 -right-10 w-60 h-60 bg-accent/5 rotate-45 blur-2xl"></div>
+            <div className="absolute -bottom-10 left-1/3 w-32 h-32 bg-primary/10 rotate-12 rounded-lg blur-xl"></div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+              <Card className="shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-[var(--transition-smooth)] hover:-translate-y-2 border-l-4 border-l-primary/50 relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-500"></div>
+                <CardHeader className="relative">
+                  <div className="w-16 h-16 mb-4 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center rotate-3 group-hover:rotate-6 transition-transform">
+                    <Leaf className="h-8 w-8 text-primary" strokeWidth={2.5} />
+                  </div>
+                  <CardTitle className="flex items-center gap-2 text-xl">
+                    Ekologiskt Hållbart
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-base">
+                    Kort tryckta på återvunnet eller biologiskt nedbrytbart papper. Minskar avfall, resursförbrukning och klimatpåverkan jämfört med traditionella flygblad.
+                  </CardDescription>
+                </CardContent>
+              </Card>
 
-            <Card className="shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-[var(--transition-smooth)]">
-              <CardHeader>
-                <div className="w-20 h-20 mb-4 rounded-lg overflow-hidden">
-                  <img src={communityIcon} alt="Gemenskap" className="w-full h-full object-cover" />
-                </div>
-                <CardTitle className="flex items-center gap-2">
-                  <Users className="h-5 w-5 text-primary" />
-                  Tillgängligt för Alla
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>
-                  Sponsorer finansierar korten genom sin logotyp, vilket gör produkten tillgänglig även för föreningar med begränsade resurser. Dubbel nytta för alla parter.
-                </CardDescription>
-              </CardContent>
-            </Card>
+              <Card className="shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-[var(--transition-smooth)] hover:-translate-y-2 border-l-4 border-l-accent/50 relative overflow-hidden group md:-rotate-1 hover:rotate-0">
+                <div className="absolute bottom-0 left-0 w-40 h-40 bg-accent/5 rounded-full translate-y-20 -translate-x-20 group-hover:scale-150 transition-transform duration-500"></div>
+                <CardHeader className="relative">
+                  <div className="w-16 h-16 mb-4 rounded-xl bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center -rotate-3 group-hover:-rotate-6 transition-transform">
+                    <HandHeart className="h-8 w-8 text-accent" strokeWidth={2.5} />
+                  </div>
+                  <CardTitle className="flex items-center gap-2 text-xl">
+                    Tillgängligt för Alla
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-base">
+                    Sponsorer finansierar korten genom sin logotyp, vilket gör produkten tillgänglig även för föreningar med begränsade resurser. Dubbel nytta för alla parter.
+                  </CardDescription>
+                </CardContent>
+              </Card>
 
-            <Card className="shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-[var(--transition-smooth)]">
-              <CardHeader>
-                <div className="w-20 h-20 mb-4 rounded-lg overflow-hidden">
-                  <img src={calendarIcon} alt="Kalender" className="w-full h-full object-cover" />
-                </div>
-                <CardTitle className="flex items-center gap-2">
-                  <Calendar className="h-5 w-5 text-primary" />
-                  Social Samhörighet
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>
-                  Främjar yttrandefrihet, synlighet och delaktighet. Ett verktyg för engagemang som stärker civilsamhället och gör det enklare för fler att delta.
-                </CardDescription>
-              </CardContent>
-            </Card>
+              <Card className="shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-[var(--transition-smooth)] hover:-translate-y-2 border-l-4 border-l-primary/50 relative overflow-hidden group md:rotate-1 hover:rotate-0">
+                <div className="absolute top-1/2 right-0 w-36 h-36 bg-primary/5 rotate-45 translate-x-20 group-hover:scale-150 transition-transform duration-500"></div>
+                <CardHeader className="relative">
+                  <div className="w-16 h-16 mb-4 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center rotate-2 group-hover:rotate-12 transition-transform">
+                    <Network className="h-8 w-8 text-primary" strokeWidth={2.5} />
+                  </div>
+                  <CardTitle className="flex items-center gap-2 text-xl">
+                    Social Samhörighet
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-base">
+                    Främjar yttrandefrihet, synlighet och delaktighet. Ett verktyg för engagemang som stärker civilsamhället och gör det enklare för fler att delta.
+                  </CardDescription>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
