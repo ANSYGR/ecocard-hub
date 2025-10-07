@@ -45,9 +45,58 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Storytelling Section */}
+      <section className="py-16 bg-gradient-to-b from-background to-primary/5">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-in">
+            När en förening vill nå ut – och ett företag vill bidra
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8 animate-fade-in">
+            EcoCard skapar en grönare dialog. Tillsammans bygger vi en rörelse som stärker civilsamhället och minskar klimatpåverkan – ett kort i taget.
+          </p>
+        </div>
+      </section>
+
       {/* How It Works */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-4">Så funkar det</h2>
+          <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
+            Från idé till handling – en enkel process för hållbar information
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20 max-w-5xl mx-auto">
+            <div className="text-center group hover-scale">
+              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center text-4xl font-bold text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-[var(--transition-smooth)]">
+                1
+              </div>
+              <h3 className="text-xl font-bold mb-3">Föreningen skickar in sitt budskap</h3>
+              <p className="text-muted-foreground">
+                Ni delar ert evenemang, kampanj eller budskap med oss – vi tar hand om resten.
+              </p>
+            </div>
+            
+            <div className="text-center group hover-scale">
+              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center text-4xl font-bold text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-[var(--transition-smooth)]">
+                2
+              </div>
+              <h3 className="text-xl font-bold mb-3">Vi designar och trycker på återvunnet papper</h3>
+              <p className="text-muted-foreground">
+                Professionella kort med QR-koder, tryckta miljövänligt med sponsorlogotyper.
+              </p>
+            </div>
+            
+            <div className="text-center group hover-scale">
+              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center text-4xl font-bold text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-[var(--transition-smooth)]">
+                3
+              </div>
+              <h3 className="text-xl font-bold mb-3">Tillsammans sprider vi hållbar information</h3>
+              <p className="text-muted-foreground">
+                Sponsorer syns på baksidan – och ert budskap når ut utan att belasta miljön.
+              </p>
+            </div>
+          </div>
+
           <h2 className="text-4xl font-bold text-center mb-4">Dubbel Hållbarhet</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
             Vi kombinerar ekologisk ansvar med social samhörighet
@@ -108,6 +157,98 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Impact Stats Section */}
+      <section className="py-20 bg-primary/5">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-4">Vår Påverkan Hittills</h2>
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            Tillsammans skapar vi verklig förändring – mätbar och märkbar
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <Card className="text-center p-8 shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-[var(--transition-smooth)]">
+              <CardContent className="pt-6">
+                <div className="text-5xl font-bold text-primary mb-2">3 500+</div>
+                <p className="text-lg font-medium mb-2">Kort tryckta</p>
+                <p className="text-sm text-muted-foreground">på återvunnet material</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center p-8 shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-[var(--transition-smooth)]">
+              <CardContent className="pt-6">
+                <div className="text-5xl font-bold text-primary mb-2">120+</div>
+                <p className="text-lg font-medium mb-2">Föreningar</p>
+                <p className="text-sm text-muted-foreground">har nått ut till nya medlemmar</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center p-8 shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-[var(--transition-smooth)]">
+              <CardContent className="pt-6">
+                <div className="text-5xl font-bold text-primary mb-2">25+</div>
+                <p className="text-lg font-medium mb-2">Sponsorer</p>
+                <p className="text-sm text-muted-foreground">profilerar sig inom hållbarhet</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-4">Röster från verkligheten</h2>
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            Hör vad våra föreningar och sponsorer säger
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <Card className="shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-[var(--transition-smooth)]">
+              <CardHeader>
+                <CardDescription className="text-lg italic mb-4">
+                  "Tack vare EcoCard kunde vi sprida vårt budskap utan att belasta miljön. Sponsorstödet gjorde det möjligt trots vår begränsade budget."
+                </CardDescription>
+                <CardTitle className="text-base font-normal">
+                  – Klara Svensson, Klimatrörelsen Nu
+                </CardTitle>
+              </CardHeader>
+            </Card>
+            
+            <Card className="shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-[var(--transition-smooth)]">
+              <CardHeader>
+                <CardDescription className="text-lg italic mb-4">
+                  "Som sponsor får vi visa vårt hållbarhetsengagemang där det verkligen räknas – ute i samhället, bland människor som bryr sig."
+                </CardDescription>
+                <CardTitle className="text-base font-normal">
+                  – Maria Andersson, GreenTech Solutions
+                </CardTitle>
+              </CardHeader>
+            </Card>
+            
+            <Card className="shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-[var(--transition-smooth)]">
+              <CardHeader>
+                <CardDescription className="text-lg italic mb-4">
+                  "Professionella kort som folk faktiskt tar med sig hem. QR-koden gjorde det enkelt att nå fler efter evenemanget."
+                </CardDescription>
+                <CardTitle className="text-base font-normal">
+                  – David Larsson, Stockholm Pride
+                </CardTitle>
+              </CardHeader>
+            </Card>
+            
+            <Card className="shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-[var(--transition-smooth)]">
+              <CardHeader>
+                <CardDescription className="text-lg italic mb-4">
+                  "EcoCard hjälper oss att kombinera affär med samhällsansvar på ett konkret sätt. Det är win-win för alla parter."
+                </CardDescription>
+                <CardTitle className="text-base font-normal">
+                  – Johan Berg, EkoBank
+                </CardTitle>
+              </CardHeader>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="container mx-auto px-4 text-center">
@@ -115,11 +256,18 @@ const Index = () => {
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             För föreningar som vill nå ut, eller företag som vill göra skillnad - tillsammans skapar vi ett grönare och mer inkluderande samhälle
           </p>
-          <Button size="lg" asChild>
-            <Link to="/kontakt">
-              Kontakta oss idag <ArrowRight className="ml-2" />
-            </Link>
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" asChild>
+              <Link to="/kontakt">
+                Kontakta oss idag <ArrowRight className="ml-2" />
+              </Link>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
+              <Link to="/organisationer">
+                Se exempel
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
 

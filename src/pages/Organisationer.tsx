@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Users } from "lucide-react";
 import eventPalestine from "@/assets/event-palestine.jpg";
 import eventPride from "@/assets/event-pride.jpg";
@@ -100,30 +101,33 @@ const Organisationer = () => {
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">Varför välja EcoCard?</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
-              <Card className="shadow-[var(--shadow-soft)]">
+              <Card className="shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-[var(--transition-smooth)]">
                 <CardHeader>
                   <CardTitle className="text-lg">Kostnadseffektivt</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">Tack vare våra sponsorer håller vi priserna låga eller gratis, så även föreningar med begränsade resurser kan delta.</p>
+                  <p className="text-muted-foreground mb-4">Tack vare våra sponsorer håller vi priserna låga eller gratis, så även föreningar med begränsade resurser kan delta.</p>
+                  <p className="text-sm font-semibold text-primary">Från 0-300 kr för 100 kort</p>
                 </CardContent>
               </Card>
               
-              <Card className="shadow-[var(--shadow-soft)]">
+              <Card className="shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-[var(--transition-smooth)]">
                 <CardHeader>
                   <CardTitle className="text-lg">Miljövänligt</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">Kort tryckta på återvunnet papper istället för engångsflyblad. Mindre avfall och klimatpåverkan.</p>
+                  <p className="text-muted-foreground mb-4">Kort tryckta på återvunnet papper istället för engångsflyblad. Mindre avfall och klimatpåverkan.</p>
+                  <p className="text-sm font-semibold text-primary">70% mindre CO₂ än traditionella flygblad</p>
                 </CardContent>
               </Card>
               
-              <Card className="shadow-[var(--shadow-soft)]">
+              <Card className="shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-[var(--transition-smooth)]">
                 <CardHeader>
                   <CardTitle className="text-lg">Professionellt</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">Högkvalitativa kort med QR-koder och tydlig design som gör det enkelt för människor att ta del av er information.</p>
+                  <p className="text-muted-foreground mb-4">Högkvalitativa kort med QR-koder och tydlig design som gör det enkelt för människor att ta del av er information.</p>
+                  <p className="text-sm font-semibold text-primary">Design & tryck ingår</p>
                 </CardContent>
               </Card>
             </div>
@@ -185,9 +189,14 @@ const Organisationer = () => {
             <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
               Oavsett om ni planerar ett evenemang, demonstration eller kampanj - vi hjälper er att sprida ert budskap hållbart och kostnadseffektivt
             </p>
-            <a href="/kontakt" className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-8 py-3 text-sm font-medium shadow hover:bg-primary/90 transition-colors">
-              Kontakta oss
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" asChild>
+                <a href="/kontakt">Beställ kort nu</a>
+              </Button>
+              <Button size="lg" variant="outline" asChild>
+                <a href="/kontakt">Räkna ut din klimatbesparing</a>
+              </Button>
+            </div>
           </div>
         </section>
       </main>
