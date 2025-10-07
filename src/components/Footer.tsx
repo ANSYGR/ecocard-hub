@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <img src={ecocardLogo} alt="EcoCard UF" className="h-10 mb-4" />
+            <img src={ecocardLogo} alt="EcoCard UF" className="h-12 mb-4" />
             <p className="text-muted-foreground">
               Hållbara informationskort som stärker både miljön och demokratin. Sponsrade av engagerade företag.
             </p>

@@ -24,7 +24,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center gap-3">
-            <img src={ecocardLogo} alt="EcoCard UF" className="h-10" />
+            <img src={ecocardLogo} alt="EcoCard UF" className="h-14" />
           </Link>
 
           {/* Desktop Navigation */}
