@@ -4,80 +4,80 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Users } from "lucide-react";
-import eventPalestine from "@/assets/event-palestine.jpg";
-import eventPride from "@/assets/event-pride.jpg";
-import eventClimate from "@/assets/event-climate.jpg";
-import eventRights from "@/assets/event-rights.jpg";
-import eventStrike from "@/assets/event-strike.jpg";
-import eventCampaign from "@/assets/event-campaign.jpg";
+import eventGarden from "@/assets/event-garden.jpg";
+import eventFestival from "@/assets/event-festival.jpg";
+import eventWorkshop from "@/assets/event-workshop.jpg";
+import eventSports from "@/assets/event-sports.jpg";
+import eventCulture from "@/assets/event-culture.jpg";
+import eventFair from "@/assets/event-fair.jpg";
 
 const Organisationer = () => {
   const events = [
     {
       id: 1,
-      organization: "Palestina Solidaritet Sverige",
-      eventName: "Manifestation för fred och rättvisa",
+      organization: "Stadsodling Stockholm",
+      eventName: "Gemensam trädgårdsdag",
       date: "15 April 2025",
-      location: "Sergels torg, Stockholm",
-      participants: 800,
-      description: "Fredlig demonstration för mänskliga rättigheter och internationell rätt. Tillsammans höjer vi våra röster för fred och rättvisa.",
-      tags: ["Demonstration", "Mänskliga Rättigheter", "Fred"],
-      image: eventPalestine,
+      location: "Tantolunden, Stockholm",
+      participants: 120,
+      description: "Kom och var med när vi planterar växter och odlar tillsammans! En hållbar aktivitet för alla åldrar där vi lär oss om ekologisk odling.",
+      tags: ["Hållbarhet", "Odling", "Gemenskap"],
+      image: eventGarden,
     },
     {
       id: 2,
-      organization: "Stockholm Pride",
-      eventName: "Pride Parade 2025",
+      organization: "Kulturföreningen Mosaik",
+      eventName: "Mångkulturell Festival",
       date: "22 April 2025",
-      location: "Stockholms innerstad",
-      participants: 5000,
-      description: "Fira kärlek, mångfald och lika rättigheter! En färgstark parad genom Stockholm för alla HBTQI+ personer och allierade.",
-      tags: ["Pride", "HBTQI+", "Rättigheter"],
-      image: eventPride,
+      location: "Rålambshovsparken, Stockholm",
+      participants: 800,
+      description: "En färgstark fest där olika kulturer möts genom mat, musik och konst. Fira mångfald och inkludering tillsammans med oss!",
+      tags: ["Kultur", "Inkludering", "Festival"],
+      image: eventFestival,
     },
     {
       id: 3,
-      organization: "Klimatrörelsen Nu",
-      eventName: "Klimaträttvisa manifestation",
+      organization: "EkoLiv Sverige",
+      eventName: "Workshop: Hållbart Liv",
       date: "1 Maj 2025",
-      location: "Mynttorget, Stockholm",
-      participants: 1200,
-      description: "Kräv klimaträttvisa nu! Vi samlas för att kräva omedelbar klimatomställning och rättvisa klimatpolitik.",
-      tags: ["Klimat", "Aktivism", "Politik"],
-      image: eventClimate,
+      location: "Kulturhuset Stadsteatern, Stockholm",
+      participants: 85,
+      description: "Lär dig praktiska tips för ett mer hållbart liv! Vi går igenom återvinning, miljövänliga alternativ och hur små val gör stor skillnad.",
+      tags: ["Utbildning", "Hållbarhet", "Livsstil"],
+      image: eventWorkshop,
     },
     {
       id: 4,
-      organization: "Rättighetscentrum",
-      eventName: "Demonstration för asylrätt",
+      organization: "Idrottsföreningen Together",
+      eventName: "Familjesportdag",
       date: "8 Maj 2025",
-      location: "Medborgarplatsen, Stockholm",
-      participants: 600,
-      description: "Stå upp för asylrätten och mänskliga rättigheter. Alla människor har rätt till ett säkert liv och rättvis behandling.",
-      tags: ["Asylrätt", "Juridik", "Solidaritet"],
-      image: eventRights,
+      location: "Gärdet, Stockholm",
+      participants: 250,
+      description: "Sport och glädje för hela familjen! Inkluderande aktiviteter där alla kan vara med, oavsett ålder eller förmåga.",
+      tags: ["Idrott", "Familj", "Inkludering"],
+      image: eventSports,
     },
     {
       id: 5,
-      organization: "Fridays for Future Stockholm",
-      eventName: "Klimatstrejk",
+      organization: "Studentkåren Kultur",
+      eventName: "Studenternas Kulturkväll",
       date: "15 Maj 2025",
-      location: "Sergels torg, Stockholm",
-      participants: 2000,
-      description: "Veckovis klimatstrejk för att uppmärksamma klimatkrisen. Unga röster för planetens framtid - tal, musik och engagemang.",
-      tags: ["Strejk", "Ungdom", "Klimat"],
-      image: eventStrike,
+      location: "Medborgarhuset, Stockholm",
+      participants: 150,
+      description: "En kväll fylld av musik, poesi och kreativitet. Studenter från olika bakgrunder delar sina kulturella uttryck.",
+      tags: ["Kultur", "Student", "Musik"],
+      image: eventCulture,
     },
     {
       id: 6,
-      organization: "Demokrati i Rörelse",
-      eventName: "Valkampanj - Rösta för förändring",
+      organization: "Grön Framtid Nätverket",
+      eventName: "Hållbarhetsmässa",
       date: "20 Maj 2025",
-      location: "Hötorget, Stockholm",
-      participants: 400,
-      description: "Engagera dig i demokratin! Informationskampanj om vikten av att rösta och vara en aktiv medborgare.",
-      tags: ["Val", "Demokrati", "Engagemang"],
-      image: eventCampaign,
+      location: "Stockholmsmässan, Älvsjö",
+      participants: 1200,
+      description: "Sveriges största hållbarhetsmässa! Träffa organisationer, företag och eldsjälar som arbetar för en grönare framtid.",
+      tags: ["Hållbarhet", "Mässa", "Nätverk"],
+      image: eventFair,
     },
   ];
 
@@ -187,7 +187,7 @@ const Organisationer = () => {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-4">Redo att nå ut?</h2>
             <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-              Oavsett om ni planerar ett evenemang, demonstration eller kampanj - vi hjälper er att sprida ert budskap hållbart och kostnadseffektivt
+              Oavsett om ni planerar kultur-, idrott- eller miljöevenemang - vi hjälper er att sprida ert budskap hållbart och kostnadseffektivt
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>

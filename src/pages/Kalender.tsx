@@ -3,74 +3,74 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar as CalendarIcon, MapPin, Users } from "lucide-react";
-import eventPalestine from "@/assets/event-palestine.jpg";
-import eventPride from "@/assets/event-pride.jpg";
-import eventClimate from "@/assets/event-climate.jpg";
-import eventRights from "@/assets/event-rights.jpg";
-import eventStrike from "@/assets/event-strike.jpg";
-import eventCampaign from "@/assets/event-campaign.jpg";
+import eventGarden from "@/assets/event-garden.jpg";
+import eventFestival from "@/assets/event-festival.jpg";
+import eventWorkshop from "@/assets/event-workshop.jpg";
+import eventSports from "@/assets/event-sports.jpg";
+import eventCulture from "@/assets/event-culture.jpg";
+import eventFair from "@/assets/event-fair.jpg";
 
 const Kalender = () => {
   const events = [
     {
       id: 1,
       date: "15 Apr",
-      eventName: "Manifestation för fred och rättvisa",
-      organization: "Palestina Solidaritet Sverige",
-      location: "Sergels torg, Stockholm",
-      participants: 800,
-      category: "Demonstration",
-      image: eventPalestine,
+      eventName: "Gemensam trädgårdsdag",
+      organization: "Stadsodling Stockholm",
+      location: "Tantolunden, Stockholm",
+      participants: 120,
+      category: "Hållbarhet",
+      image: eventGarden,
     },
     {
       id: 2,
       date: "22 Apr",
-      eventName: "Pride Parade 2025",
-      organization: "Stockholm Pride",
-      location: "Stockholms innerstad",
-      participants: 5000,
-      category: "Pride",
-      image: eventPride,
+      eventName: "Mångkulturell Festival",
+      organization: "Kulturföreningen Mosaik",
+      location: "Rålambshovsparken, Stockholm",
+      participants: 800,
+      category: "Kultur",
+      image: eventFestival,
     },
     {
       id: 3,
       date: "1 Maj",
-      eventName: "Klimaträttvisa manifestation",
-      organization: "Klimatrörelsen Nu",
-      location: "Mynttorget, Stockholm",
-      participants: 1200,
-      category: "Klimat",
-      image: eventClimate,
+      eventName: "Workshop: Hållbart Liv",
+      organization: "EkoLiv Sverige",
+      location: "Kulturhuset Stadsteatern, Stockholm",
+      participants: 85,
+      category: "Utbildning",
+      image: eventWorkshop,
     },
     {
       id: 4,
       date: "8 Maj",
-      eventName: "Demonstration för asylrätt",
-      organization: "Rättighetscentrum",
-      location: "Medborgarplatsen, Stockholm",
-      participants: 600,
-      category: "Juridik",
-      image: eventRights,
+      eventName: "Familjesportdag",
+      organization: "Idrottsföreningen Together",
+      location: "Gärdet, Stockholm",
+      participants: 250,
+      category: "Idrott",
+      image: eventSports,
     },
     {
       id: 5,
       date: "15 Maj",
-      eventName: "Klimatstrejk",
-      organization: "Fridays for Future Stockholm",
-      location: "Sergels torg, Stockholm",
-      participants: 2000,
-      category: "Strejk",
-      image: eventStrike,
+      eventName: "Studenternas Kulturkväll",
+      organization: "Studentkåren Kultur",
+      location: "Medborgarhuset, Stockholm",
+      participants: 150,
+      category: "Student",
+      image: eventCulture,
     },
     {
       id: 6,
       date: "20 Maj",
-      eventName: "Valkampanj - Rösta för förändring",
-      organization: "Demokrati i Rörelse",
-      location: "Hötorget, Stockholm",
-      participants: 400,
-      category: "Val",
-      image: eventCampaign,
+      eventName: "Hållbarhetsmässa",
+      organization: "Grön Framtid Nätverket",
+      location: "Stockholmsmässan, Älvsjö",
+      participants: 1200,
+      category: "Mässa",
+      image: eventFair,
     },
   ];
 
@@ -84,7 +84,7 @@ const Kalender = () => {
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-5xl font-bold mb-6">Evenemangskalender</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Se alla kommande miljöevenemang på ett ställe
+              Kultur, hållbarhet, idrott och inkludering – upptäck vad som händer
             </p>
           </div>
         </section>

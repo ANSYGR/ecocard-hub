@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ArrowRight, QrCode, Users, Calendar } from "lucide-react";
-import heroImage from "@/assets/hero-protest.jpg";
+import heroCommunity from "@/assets/hero-community.jpg";
 import qrIcon from "@/assets/qr-icon.jpg";
 import communityIcon from "@/assets/community-icon.jpg";
 import calendarIcon from "@/assets/calendar-icon.jpg";
@@ -18,7 +18,7 @@ const Index = () => {
       <section 
         className="relative h-[600px] flex items-center justify-center text-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroImage})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroCommunity})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
